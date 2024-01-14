@@ -17,24 +17,12 @@ const ComboBox = () => {
 
   const tokens = [
     {
-      value: "next.js",
-      label: "Next.js",
+      value: "cal",
+      label: "CAL",
     },
     {
-      value: "sveltekit",
-      label: "SvelteKit",
-    },
-    {
-      value: "nuxt.js",
-      label: "Nuxt.js",
-    },
-    {
-      value: "remix",
-      label: "Remix",
-    },
-    {
-      value: "astro",
-      label: "Astro",
+      value: "bnb",
+      label: "BNB",
     },
   ];
 
