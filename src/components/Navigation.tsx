@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   const routes = [
     { href: "", label: "swap" },
-    { href: "liquidity", label: "liquidity" },
+    { href: "liquidity", label: "pool" },
   ];
   return (
     <nav className="mx-6 space-x-4 lg:space-x-6 hidden md:block">

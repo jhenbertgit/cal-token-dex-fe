@@ -1,5 +1,8 @@
 import ComboBox from "@/components/ComboBox";
+import SwapSettings from "@/components/SwapSettings";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ArrowUpDown } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -7,22 +10,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 
 const Swap = () => {
   return (
     <Card className="w-[550px]">
       <CardHeader>
-        <CardTitle className="flex justify-center font-bold text-4xl">
+        <CardTitle className="flex justify-between font-bold text-2xl">
           Swap Token
+          <SwapSettings />
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center gap-2">
           <div className="flex space-x-2">
             <Input type="number" placeholder="0" />
             <ComboBox />
           </div>
+          <ArrowUpDown />
           <div className="flex space-x-2">
             <Input type="number" placeholder="0" disabled={true} />
             <ComboBox />
